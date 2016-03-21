@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -9,7 +9,8 @@
 	
 	<META NAME="Author" CONTENT="Richya">
 	<link href="index.css" rel= "stylesheet">
-	
+	<script src="jquery.js"></script>
+
 	<style>
 	body {
 		margin:0;
@@ -17,18 +18,123 @@
 		background: #000 url(img/background_fit.jpg) center center fixed no-repeat;
 		-moz-background-size: cover;
 		background-size: cover;
-	}		
-</style>
-	
-	
+	}	
+	</style>
+	<script
+	src="http://maps.googleapis.com/maps/api/js">
+	</script>
+
+	<script>
+	var myCenter=new google.maps.LatLng(25.077700, 121.389825);
+
+	function initialize()
+	{
+	var mapProp = {
+	center:myCenter,
+	zoom:15,
+	panControl:true,
+    zoomControl:true,
+    mapTypeControl:true,
+    scaleControl:true,
+    streetViewControl:true,
+    overviewMapControl:true,
+    rotateControl:true,    
+	mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var marker=new google.maps.Marker({
+	position:myCenter,
+	animation:google.maps.Animation.BOUNCE
+	});
+
+	marker.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 	
 </head>
 <body>
-<div><p1> 林口早市 </p1>
-<img id ="color_black"src="img/home pic_linkou_outline.jpg" >
-<img id ="colorit"src="img/colorit.gif">
-<img id ="menu"src="img/menuicon.png">
+<div  class="main"><p1> 林口早市 </p1>
+	<div><img id ="color_black"src="img/home pic_linkou_outline.jpg" >
+		<div><img id ="colorit"src="img/colorit.gif">			
+			
+		</div>
+	</div>
+	<div>
+	<img id ="color_colorit"src="img/home pic_linkou_painted.jpg" >
+		<div>
+			<div>
+				<img id ="again"src="img/again.png">			
+			</div>
+		</div>
 
+	</div>
+</div>
+<div>
+				<img id ="menu"src="img/menuicon.png">
+</div>
+<div class="sidebar">
+	<img id = "sidemenu" src="img/sidemenu background.jpg">
+		<div >
+			<img id = "about_black" 	src="img/menu content icon_1b.png">
+			<img id = "about_white" 	src="img/menu content icon_1a.png">
+			<img id = "location_black"	src="img/menu content icon_2b.png">
+			<img id = "location_white" 	src="img/menu content icon_2a.png">
+			<img id = "shops_black"		src="img/menu content icon_3b.png">
+			<img id = "shops_white" 	src="img/menu content icon_3a.png">
+			<img id = "close"	src="img/close icon.png">
+		</div>
+</div>
+<div class="about">
+	<h1 id="story">林口早市</h1>	
+	<p id="story_En" >Linkou Morning  Market</p>
+	
+	<p id="story_Artucle">
+	林口早市，又被稱爲林口老街，是<br>
+	設立於民國64年5月的傳統早市。林<br>
+	口早市位於林口路與中正路之間，<br>	
+	從民國九十二年開始就被規劃為<br>
+	「中正路藝術商圈」。林口市場內<br>
+	簡潔清爽的氛圍，加上清楚明瞭的<br>
+	動線規劃，空間顯得寬敞明亮，整<br>
+	潔的地板與排汙設施，加上挑高的<br>
+	屋頂使空氣對流循環，讓這裡少了<br>
+	惱人的異味。商家十分熱情親切，<br>
+	總是時常揚起熱忱的笑臉招呼迎接<br>
+	每一個經過的顧客。市場內有許多<br>
+	知名美食攤位，吸引了許多當地民<br>
+	眾與遠地聞香前來的饕客，促進市<br>
+	場商機。<br>
+	</p>
+	<img id="about1"		src="img/content1 pic_2.jpg">
+	<img id="about2"		src="img/content1 pic_1.jpg">
+	<img id="about_close"	src="img/close icon.png">
+	
+</div>
+<div class="location">
+	<h1 id="info">地理位置和交通資訊</h1>
+	<p id="info_En">Location and Transportation</p>
+	<p id="SC_BUS">三重客運</p>
+	<p id="SC">〈公西～板橋、公西北門、<br>樹林～林口長庚、<br>長庚大學～臺北市政府〉<br>
+	林口農會站。 </p>
+	<p id="TL_BUS">桃園客運</p>
+	<p id="TL">林口農會站。</p>
+	<img id="location_close"	src="img/close icon.png">
+	<div id="googleMap" ></div>
+</div>
+
+<div class="shops">
+	<h1 id="list">店家分類</h1>
+	<p id="list_En">Directory Listing</p>
+	<div class="sheet">
+		<div id="one">日用百貨</div>
+		<div id="two">時尚服裝</div>
+		<div id="three">食品飲料</div>
+		<div id="four">生鮮蔬果</div>
+		<div id="five">五金材料</div>
+	</div>
+	<img id="shops_close"		src="img/close icon.png">	
 </div>
 </body>
+<script src = "index.js" type = "text/javascript"></script>
 </html>

@@ -156,7 +156,7 @@ p1 {
 	font-family:fantasy;
 	z-index:4;
 	position:absolute;
-	top:14%;
+	top:10%;
 	left:13%; 
 }
 #story_Artucle{
@@ -235,7 +235,7 @@ p1 {
 	font-family:fantasy;
 	z-index:4;
 	position:absolute;
-	top:14%;
+	top:10%;
 	left:13%; 
 }
 #SC_BUS
@@ -246,7 +246,7 @@ p1 {
 	z-index:4;
 	position:absolute;
 	top:27%;
-	left:10%; 
+	left:60%; 
 }
 #SC
 {
@@ -256,7 +256,7 @@ p1 {
 	z-index:4;
 	position:absolute;
 	top:35%;
-	left:10%; 
+	left:60%; 
 }
 #TL_BUS
 {
@@ -266,7 +266,7 @@ p1 {
 	z-index:4;
 	position:absolute;
 	top:52%;
-	left:10%; 
+	left:60%; 
 }
 #TL
 {
@@ -276,15 +276,9 @@ p1 {
 	z-index:4;
 	position:absolute;
 	top:60%;
-	left:10%; 
+	left:60%; 
 }
-#googleMap
-{	
-	width: 55%;
-	height : 60%;
-	left:40%;
-	top:10%;
-}
+
 .shops
 {
 	background-color:white;
@@ -323,7 +317,7 @@ p1 {
 	font-family:fantasy;
 	z-index:4;
 	position:absolute;
-	top:14%;
+	top:10%;
 	left:13%;
 }
 .sheet

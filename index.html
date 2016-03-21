@@ -20,7 +20,7 @@
 		background-size: cover;
 	}	
 	</style>
-	<script
+	<!-- <script
 	src="http://maps.googleapis.com/maps/api/js">
 	</script>
 
@@ -50,7 +50,7 @@
 	marker.setMap(map);
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	</script> -->
 	
 </head>
 <body>
@@ -112,7 +112,7 @@
 	
 </div>
 <div class="location">
-	<h1 id="info">地理位置和交通資訊</h1>
+	<div><h1 id="info">地理位置和交通資訊</h1>
 	<p id="info_En">Location and Transportation</p>
 	<p id="SC_BUS">三重客運</p>
 	<p id="SC">〈公西～板橋、公西北門、<br>樹林～林口長庚、<br>長庚大學～臺北市政府〉<br>
@@ -120,7 +120,11 @@
 	<p id="TL_BUS">桃園客運</p>
 	<p id="TL">林口農會站。</p>
 	<img id="location_close"	src="img/close icon.png">
-	<div id="googleMap" ></div>
+	
+	<div class="googleMap" >
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14455.281521659414!2d121.3716944!3d25.0740764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a6b0e1281cd5%3A0x98d04e6cd255be56!2z5p6X5Y-j6ICB6KGX!5e0!3m2!1szh-TW!2stw!4v1458566014335" width="1600" height="1200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	</div>
 </div>
 
 <div class="shops">

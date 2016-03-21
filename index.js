@@ -1,11 +1,17 @@
 /*主畫面上色*/
+$("#again").hide();
+$("#color_colorit").hide();
 $("#colorit").on("click" , function(){
-	 $("#color_black").hide();
-	  $("#colorit").hide();
+	$("#color_black").hide();
+	$("#colorit").hide();
+	$("#again").show();
+	$("#color_colorit").show();
 });
 $("#again").on("click" , function(){
-	 $("#color_black").show();
-	  $("#colorit").show();
+	$("#color_black").show();
+	$("#colorit").show();
+	$("#again").hide();
+	$("#color_colorit").hide();
 });
 /*側欄動畫*/
 $("#menu").on("click",function(){

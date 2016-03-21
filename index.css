@@ -55,8 +55,8 @@ p1 {
 }  
 #sidemenu{
 	position:absolute;
-	width: 30%;
-	height : 105%; 
+	width: 1000px;
+	height : 2100px; 
 	left:-1200px;
 	top:0px;
 	z-index:4;
